@@ -43,7 +43,7 @@ const server =   app.listen( PORT,console.log("server is up ",PORT))
 const io= require('socket.io')(server,{
     pingTimeout:60000,
     cors:{
-        origin:"https://63852ff2a69c557e8365644d--funny-kulfi-94dba5.netlify.app"
+        origin:"https://6385307d1f56596530878f7a--funny-kulfi-94dba5.netlify.app"
     },
 });
 io.on("connection",(socket)=>{
