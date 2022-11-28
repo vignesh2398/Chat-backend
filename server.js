@@ -13,7 +13,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cors())
 app.get('/',(req,res)=>{
-    res.send("api is running frontend: https://63852ff2a69c557e8365644d--funny-kulfi-94dba5.netlify.app")
+    res.send("api is running frontend: https://6385307d1f56596530878f7a--funny-kulfi-94dba5.netlify.app/")
     
 })
 app.use("/api/user",UserRouter)
