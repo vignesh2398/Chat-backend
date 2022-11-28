@@ -1,10 +1,10 @@
 {
-  "name": "talk-a-tive",
+  "name": "char-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "server.js"
+    "start": "node server.js"
   },
   "author": "Vignesh",
   "license": "ISC",
