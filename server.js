@@ -13,7 +13,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cors())
 app.get('/',(req,res)=>{
-    res.send("api is running frontend: https://6385307d1f56596530878f7a--funny-kulfi-94dba5.netlify.app/")
+    res.send("api is running frontend: https://638f10e9e06b1f00aefc2551--funny-kulfi-94dba5.netlify.app/")
     
 })
 app.use("/api/user",UserRouter)
@@ -49,7 +49,7 @@ const server =   app.listen( PORT,console.log("server is up ",PORT))
 const io= require('socket.io')(server,{
     pingTimeout:60000,
     cors:{
-        origin:"https://6385307d1f56596530878f7a--funny-kulfi-94dba5.netlify.app"
+        origin:"https://638f10e9e06b1f00aefc2551--funny-kulfi-94dba5.netlify.app/"
     },
 });
 io.on("connection",(socket)=>{
