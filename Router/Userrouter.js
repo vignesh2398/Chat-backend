@@ -7,6 +7,6 @@ const router=express.Router();
 router.post('/signup',registerUser)
 router.post('/login',authUser)
 router.get('/',protect,allUsers)
-router.post('/group',protect,createGroupChat)
+
 
 module.exports=router;

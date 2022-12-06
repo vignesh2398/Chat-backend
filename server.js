@@ -32,7 +32,15 @@ app.use(notFound)
 app.use(errorHandler) 
 const PORT= process.env.PORT||5000;
 const mongo=process.env.MONGO_URL
-mongoose.connect(mongo).then(()=>{
+
+
+
+
+
+
+mongoose.connect(mongo,{    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: true,}).then(()=>{
     console.log("db connected")
 }).catch((error)=>{
     console.log(error.codeName)
