@@ -40,8 +40,7 @@ const mongo=process.env.MONGO_URL
 
 mongoose.connect(mongo,{    useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: true,
-    strictQuery:true}).then(()=>{
+    useFindAndModify: true}).then(()=>{
     console.log("db connected")
 }).catch((error)=>{
     console.log(error.codeName)
